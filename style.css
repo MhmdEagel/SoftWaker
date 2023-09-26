@@ -1,0 +1,188 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-repeat: no-repeat;
+    background-image: url("img/cover.jpg");
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    color: #fff;
+    min-height: 650px;
+    position: relative;
+}
+nav {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.87);
+}
+.branding {
+    margin-left: 1em;
+    margin-right: auto;
+}
+.hero {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    max-width: 450px;
+}
+nav > ul {
+    list-style: none;
+    padding: .5em;
+    margin-right: 1em;
+    font-weight: 500;
+}
+nav > ul > li {
+    display: inline-block;
+    padding: 0 1em;
+}
+nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+nav > ul > li > a:hover {
+    text-shadow: 0px 0px 2px white;
+}
+main {
+	display: flex;
+	gap: 1.25em;
+	padding: 1em;
+    margin-top: 4em;
+    color: #252A34;
+    justify-content: center;
+}
+
+
+
+
+.service-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#service {
+ box-shadow: 0 0 2px 2px #EAEAEA;
+ padding: 2em 2em;
+}
+.card-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 1.5em;
+
+}
+.card-item {
+    padding: .5em;
+    max-width: 250px;
+    box-shadow: 0 0 2px 2px #EAEAEA;
+    border-radius: 10px;
+}
+
+.card-img {
+	border-radius: 10px;	
+}
+
+aside {
+	max-width: 300px;
+	padding: .5em 1.5em;
+	max-height: 550px;
+	box-shadow: 0 0 2px 2px #EAEAEA;
+}
+
+.about-title {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.about-img {
+	margin: 0 auto;
+	display: block;
+	border-radius: 50%;
+	box-shadow: 0 0 2px 2px #EAEAEA;
+}
+
+.about-desc {
+	text-align: justify;
+}
+
+
+#review {
+	text-align: center;
+	max-width: 500px;
+	width: 100%;
+	padding: 1em;
+	margin: 3em auto;
+	box-shadow: 0 0 2px 2px #EAEAEA;
+}
+
+.review-img {
+	border-radius: 50%;
+}
+
+.review-job {
+	line-height: 0;
+}
+
+
+.prev-btn, .next-btn {
+	padding: .5em 1em;
+}
+
+footer {
+	color: #fff;
+	text-align: center;	
+	padding: 1.5em;
+	background: black;
+}
+
+
+.shadow {
+    background: rgba(0, 0, 0, .8);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.orange {
+    color: orange;
+}
+.teal {
+    color: #08D9D6;
+}
+
+
+@media screen and (max-width: 1120px) {
+ 	main {
+ 		flex-direction: column;
+ 		align-items: center;
+ 	}
+
+ 	
+
+ 	.card-container {
+ 		flex-direction: column;
+ 		align-items: center;
+ 		margin: 0 auto;
+ 	}
+
+ 	aside {
+ 		width: 100%;
+ 		margin-bottom: 3em;
+ 	}
+}
